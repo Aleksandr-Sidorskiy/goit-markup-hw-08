@@ -1,0 +1,77 @@
+/* основной цвет текста #757575 */
+/* цвет заголовка #212121 */
+/* цвет логотипа #2196F3 */
+/* вторичный цвет #FFFFFF */
+/* цвет фона #E5E5E5 */
+/* цвет фона подвала #2F303A  */
+/* цвет фона "Наша команда" #F5F4FA */
+
+:root {
+  --theme-color: #e5e5e5;
+  --text-primery: #757575;
+  --text-secondary: #212121;
+  --fone-color: #2196f3;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto";
+  background-color: ffffff;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0; /* нулевая граница */
+  padding: 0; /* нулевые отступы */
+  border: 0; /* больше всего для картинок в IE6 */
+  outline: 0; /* точечная граница вокруг ссылок в Firefox */
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--text-secondary);
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  /* outline: 1px solid #212121; */
+}
+.normal {
+  padding-top: 0px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.top {
+  padding-top: 0px;
+}

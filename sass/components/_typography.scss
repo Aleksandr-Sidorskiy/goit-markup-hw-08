@@ -1,0 +1,119 @@
+// логотип
+%logo {
+  font-family: "Raleway";
+  font-weight: bold;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 1.19;
+}
+// навигация
+%nav {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+// герой
+%hero {
+  font-weight: 900;
+  font-style: normal;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+}
+
+// особенности заголовок
+%peculiarities__title {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+// особенности текст
+%peculiarities__text {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+// заголовок секций
+%title {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+// чем мы занимаемся
+%produktion__text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+// имя члена команды
+%comand__name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+}
+
+// должность члена команды
+%comand__position {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+}
+
+// адресс
+%footer__addres {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+// заголовки footer
+%footer__heading {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.03em;
+}
+// кнопки портфолио
+%button__portfolio {
+  font-weight: 500;
+  font-family: "Roboto";
+  border-radius: 4px;
+  border: none;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+// карточка__название
+%projekt__box-heading {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 2;
+}
+
+//карточка__продукция
+%projekt__box-text {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.87;
+}

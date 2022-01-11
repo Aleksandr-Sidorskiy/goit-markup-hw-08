@@ -1,0 +1,18 @@
+// базовые стили
+@import "./sass/base/reset";
+@import "./sass/base/vars";
+@import "./sass/base/base-style";
+
+// секции
+@import "./sass/layout/header";
+@import "./sass/layout/hero";
+@import "./sass/layout/peculiarities";
+@import "./sass/layout/produktion";
+@import "./sass/layout/comand";
+@import "./sass/layout/client";
+@import "./sass/layout/footer";
+@import "./sass/layout/portfolio";
+
+// компоненты
+@import "./sass/components/modal";
+@import "./sass/components/typography";

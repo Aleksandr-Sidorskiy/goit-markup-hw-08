@@ -1,0 +1,202 @@
+/* Модальное окно */
+.button-order-servise {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  padding: 10px 32px;
+  border-radius: 4px;
+
+  color: #ffffff;
+  font-family: "roboto";
+  font-weight: 700;
+  background-color: var(--fone-color);
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.85;
+}
+.backdrop {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.2);
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 528px;
+  height: 581px;
+  padding: 40px;
+
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.modal__close {
+  height: 40px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  fill: #000;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__close:hover {
+  fill: var(--fone-color);
+}
+.modal__head {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+}
+.modal__form {
+  margin-top: 12px;
+}
+.modal__box {
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+
+  color: var(--text-primery);
+  font-size: 12px;
+  letter-spacing: 0.01em;
+}
+.modal__input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-top: 4px;
+  padding: 0 10px 0 35px;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__input:focus {
+  outline: none;
+  border: 1px solid var(--fone-color);
+}
+.modal__input:focus + .modal__icon {
+  fill: var(--fone-color);
+}
+
+.modal__icon {
+  display: block;
+
+  position: absolute;
+  top: 55%;
+  left: 10px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__coment::placeholder {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal__coment {
+  padding: 12px 16px;
+  width: 448px;
+  height: 120px;
+  resize: none;
+}
+.modal__policy-box {
+  font-size: 14px;
+  color: #757575;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.modal__policy-checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0px;
+  padding: 0px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  transition-property: border-color, outline;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__policy-checkbox:checked + .modal__policy-box::before {
+  background-color: #2196f3;
+  background-image: url(../images/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.modal__policy-checkbox:focus + .modal__policy-box::before {
+  border-color: #2196f3;
+  outline: 2px solid #2196f3;
+}
+
+.modal__policy-box::before {
+  display: block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 1px solid #212121;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+
+.modal__link {
+  color: #2196f3;
+  text-decoration: underline;
+}
+.modal-submit-btn {
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  background-color: var(--fone-color);
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
