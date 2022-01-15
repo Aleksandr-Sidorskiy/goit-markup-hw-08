@@ -16,21 +16,11 @@ header {
 /* логотип */
 .logo {
   @extend %logo;
-  // font-family: "Raleway";
-  // font-weight: bold;
-  // font-style: normal;
-  // font-size: 26px;
-  // line-height: 1.19;
   color: var(--text-secondary);
 }
 
 .primery-logo {
   @extend %logo;
-  // font-family: "Raleway";
-  // font-weight: bold;
-  // font-style: normal;
-  // font-size: 26px;
-  // line-height: 1.19;
   color: var(--fone-color);
 }
 /* навигация */
@@ -48,10 +38,6 @@ header {
 
   color: var(--text-secondary);
   @extend %nav;
-  // font-weight: 500;
-  // font-style: normal;
-  // font-size: 14px;
-  // line-height: 1.14;
 }
 
 .nav__link {
@@ -97,10 +83,6 @@ header {
 
   color: var(--text-primery);
   @extend %nav;
-  // font-weight: 500;
-  // font-style: normal;
-  // font-size: 14px;
-  // line-height: 1.14;
 
   &:hover,
   &:focus {
@@ -121,10 +103,6 @@ header {
   align-items: center;
   color: var(--text-primery);
   @extend %nav;
-  // font-weight: 500;
-  // font-style: normal;
-  // font-size: 14px;
-  // line-height: 1.14;
 
   &:hover,
   &:focus {
