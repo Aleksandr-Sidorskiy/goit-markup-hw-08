@@ -1,45 +1,88 @@
-/* особености */
+// * особености */
+// @media screen and (min-width: 480px) {}
+//}
+// @media screen and (min-width: 768px) {}
+// }
+// @media screen and (min-width: 1200px) {}
+// }
 .peculiarities__heading {
   display: none;
 }
+// .peculiarities__list {
+//   display: flex;
+//   justify-content: center;
+// }
+
+// .peculiarities__svg {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 270px;
+//   height: 120px;
+//   margin-bottom: 30px;
+//   background-color: #f5f4fa;
+//   border-radius: 4px;
+// }
+
+// .peculiarities__item:not(:last-child) {
+//   margin-right: 30px;
+// }
 .peculiarities__list {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 768px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    // justify-content: space-between;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
 }
-
+.peculiarities__item {
+  padding-left: 15px;
+  padding-right: 15px;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    .peculiarities__item:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+.peculiarities__box {
+  @media screen and (min-width: 1200px) {
+    padding: 0px;
+    width: 270px;
+  }
+}
 .peculiarities__svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
   height: 120px;
-  margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
 }
-
-.peculiarities__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .peculiarities__title {
+  margin-top: 30px;
   text-transform: uppercase;
   color: var(--text-secondary);
   @extend %peculiarities__title;
-  // font-weight: 700;
-  // font-style: normal;
-  // font-size: 14px;
-  // line-height: 1.14;;;;
 }
 
 .peculiarities__text {
   margin-top: 10px;
-  width: 270px;
   color: var(--text-primery);
   @extend %peculiarities__text;
-  // font-weight: 400;
-  // font-style: normal;
-  // font-size: 14px;
-  // line-height: 1.71;
-  // letter-spacing: 0.03em;;;
 }
