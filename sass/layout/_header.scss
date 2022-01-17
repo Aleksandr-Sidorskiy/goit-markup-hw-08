@@ -11,6 +11,31 @@ header {
 .nav {
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
+}
+.menu-button {
+  justify-content: flex-end;
+  display: inline-flex;
+  margin-right: 15px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  & .icon-cross {
+    display: none;
+  }
+  &.is-open .icon-cross {
+    display: block;
+  }
+  &.is-open .icon-burger {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 /* логотип */
@@ -25,6 +50,9 @@ header {
 }
 /* навигация */
 .nav__list {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   margin-left: 93px;
   display: flex;
 }
@@ -73,6 +101,9 @@ header {
 }
 /* контакты */
 .kontacts {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   display: flex;
   margin-left: auto;
 }
