@@ -27,6 +27,7 @@
                     <a href="#" class="logo">
                         <span class="primery-logo">Web</span>Studio
                     </a>
+                   
                     <!-- список навигации -->
                     <ul class="nav__list">
                         <li class="nav__item"><a class="nav__link nav__position" href="./index.html">Студия</a></li>
@@ -45,6 +46,13 @@
                     </svg>
                         +38 096 111 11 11</a>
                 </div>
+                <button type="button" class="menu-button is-open" data-menu-button>
+                
+                    <svg width="40" height="40" class="burger">
+                        <use class="icon-cross" href="images/icons.svg#icon-close_40px-1"></use>
+                        <use class="icon-burger" href="images/icons.svg#icon-menu_40px-1"></use>
+                    </svg>
+                </button>
             </div>
       
         
@@ -201,8 +209,8 @@
             <ul class="comand__list">
                 
                 <li class="comand__item">
-                    <div class="comand__img">
-                    <img src="images/igor.jpg" alt="Игорь-Демьяненко" width="270">
+                    <div class="comand__box">
+                    <img class="comand__img" src="images/igor.jpg" alt="Игорь-Демьяненко" width="100%">
                     <div class="comand__name-box">
                         <h3 class="comand__name">Игорь Демьяненко</h3>
                         <p class="comand__position">Product Designer</p>
@@ -247,8 +255,8 @@
 
 
                 <li class="comand__item">
-                    <div class="comand__img">
-                    <img src="images/olga.jpg" alt="Ольга-Репина" width="270">
+                    <div class="comand__box">
+                    <img class="comand__img" src="images/olga.jpg" alt="Ольга-Репина" width="100%">
                     <div class="comand__name-box">
                         <h3 class="comand__name">Ольга Репина</h3>
                         <p class="comand__position">Frontend Developer</p>
@@ -293,8 +301,8 @@
 
 
                 <li class="comand__item">
-                    <div class="comand__img">
-                    <img src="images/nikolai.jpg" alt="Николай-Тарасов" width="270">
+                    <div class="comand__box">
+                    <img class="comand__img" src="images/nikolai.jpg" alt="Николай-Тарасов" width="100%">
                     <div class="comand__name-box">
                         <h3 class="comand__name">Николай Тарасов</h3>
                         <p class="comand__position">Marketing</p>
@@ -339,8 +347,8 @@
 
 
                 <li class="comand__item">
-                    <div class="comand__img">
-                            <img src="images/mihail.jpg" alt="Михаил-Ермаков" width="270">
+                    <div class="comand__box">
+                            <img class="comand__img" src="images/mihail.jpg" alt="Михаил-Ермаков" width="100%">
                             <div class="comand__name-box">
                                 <h3 class="comand__name">Михаил Ермаков</h3>
                                 <p class="comand__position">UI Designer</p>
@@ -447,9 +455,12 @@
 
     
 <!-- подвал -->
-    <footer class="footer">
+    <footer class="footer section">
         <a name="footer"></a>
         <div class="footer__box container">
+            <!-- <div class="footer__wrapper">
+                
+            </div> -->
             <div class="footer-addres">
                 <a href="#">
                     <span class="logo-primery">Web</span><span class="logo-secondary">Studio </span>
@@ -519,7 +530,7 @@
         
        
     </footer>
-
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 
