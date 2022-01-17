@@ -30,8 +30,6 @@
 }
 
 .comand__item {
-  padding-left: 15px;
-  padding-right: 15px;
   padding-top: 30px;
 
   @media screen and (min-width: 480px) {
@@ -39,7 +37,7 @@
     justify-content: center;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100%-2 * 30) / 2);
   }
   @media screen and (min-width: 1200px) {
     justify-content: center;
@@ -49,9 +47,22 @@
   }
 }
 
-.comand__img {
+.comand__box {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 480px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+    width: 270px;
+  }
 }
 .comand {
   background-color: #f5f4fa;
@@ -62,6 +73,20 @@
   text-align: center;
   background-color: #ffffff;
 }
+// .comand__img {
+//   @media screen and (max-width: 479px) {
+//     width: 100%;
+//   }
+//   @media screen and (min-width: 480px) {
+//     width: 100%;
+//   }
+//   @media screen and (min-width: 768px) {
+//     width: 354px;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     width: 270px;
+//   }
+// }
 .comand__name {
   color: var(--text-secondary);
   @extend %comand__name;
