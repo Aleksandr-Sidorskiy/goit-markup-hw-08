@@ -1,3 +1,8 @@
+@media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 768px) {
+}
+
 /* Портфолио */
 .projekt-heading {
   display: none;
@@ -5,14 +10,27 @@
 
 .projekt__button-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 56px;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 36px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 56px;
+  }
 }
 .projekt__button-item:not(:last-child) {
   margin-right: 8px;
 }
 
 .projekt__button-item {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
   padding: 6px 22px;
 
   color: var(--text-secondary);
@@ -20,13 +38,6 @@
   border: none;
 
   @extend %button__portfolio;
-  // font-weight: 500;
-  // font-family: "Roboto";
-  // border-radius: 4px;
-  // font-style: normal;
-  // font-size: 16px;
-  // line-height: 1.62;
-
   &:hover,
   &:focus {
     color: #ffffff;
@@ -43,17 +54,27 @@
 }
 /* карточки */
 .projekt__box-list {
-  display: flex;
-
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-  padding: 0;
+  @media screen and (max-width: 767px) {
+  }
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    padding: 0;
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 .projekt__box-item {
-  flex-basis: calc((100% - 90px) / 3);
-  margin-left: 30px;
-  margin-top: 30px;
+  margin: 15px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 6 * 15px) / 3);
+  }
 
   &:hover,
   &:focus {
@@ -128,25 +149,9 @@
   background-color: rgba(33, 150, 243, 0.9);
 }
 
-// .projekt__box-item .projekt__box-deskription:hover .tehnokryak,
-// .projekt__box-item .projekt__box-deskription:hover .poster,
-// .projekt__box-item .projekt__box-deskription:hover .restaurant,
-// .projekt__box-item .projekt__box-deskription:hover .prime,
-// .projekt__box-item .projekt__box-deskription:hover .boxes,
-// .projekt__box-item .projekt__box-deskription:hover .komp,
-// .projekt__box-item .projekt__box-deskription:hover .limited-edition,
-// .projekt__box-item .projekt__box-deskription:hover .lab,
-// .projekt__box-item .projekt__box-deskription:hover .business {
-//   transform: translateY(0%);
-// }
-
 .projekt__box-text {
   color: var(--text-primery);
   @extend %projekt__box-text;
-  // font-weight: normal;
-  // font-style: normal;
-  // font-size: 16px;
-  // line-height: 1.87;
 
   background: #ffffff;
   border: 1px solid #eeeeee;
@@ -156,8 +161,4 @@
 .projekt__box-heading {
   color: var(--text-secondary);
   @extend %projekt__box-heading;
-  // font-weight: 700;
-  // font-style: normal;
-  // font-size: 18px;
-  // line-height: 2;
 }
