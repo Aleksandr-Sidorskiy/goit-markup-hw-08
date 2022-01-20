@@ -148,7 +148,11 @@
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
 }
-
+.projekt__box-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 .projekt__box-text {
   color: var(--text-primery);
   @extend %projekt__box-text;
