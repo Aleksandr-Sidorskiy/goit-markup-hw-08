@@ -1,7 +1,5 @@
-header {
-  border-bottom: 1px solid #ececec;
-}
 .header {
+  border-bottom: 1px solid #ececec;
   position: relative;
   display: flex;
   align-items: center;
@@ -22,9 +20,9 @@ header {
   justify-content: flex-end;
   display: inline-flex;
   margin-right: 15px;
-  padding: 0;
   border: none;
   background-color: transparent;
+  z-index: 3;
 
   & .icon-cross {
     display: none;
@@ -43,9 +41,12 @@ header {
   display: none;
   position: absolute;
   z-index: 1;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
   width: 100vw;
   height: 100vh;
-  top: 100%;
+  top: 0;
   left: 0;
   background: #ffffff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
@@ -58,7 +59,6 @@ header {
 .menu-container__nav {
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
 }
 .menu-container__link {
   font-style: normal;
@@ -77,18 +77,13 @@ header {
   margin-bottom: 32px;
 }
 .menu-container__kontacts-box {
-  display: flex;
-  justify-content: space-between;
-}
-.menu-container__kontacts-box {
-  display: flex;
+  // display: flex;
   flex-direction: column;
-  justify-items: end;
+  justify-content: flex-end;
 }
 .menu-container__kontacts {
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
 }
 .menu-container__tel {
   font-style: normal;
@@ -117,7 +112,7 @@ header {
 }
 .menu-container__social {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin-top: 64px;
   margin-bottom: 48px;
 }
