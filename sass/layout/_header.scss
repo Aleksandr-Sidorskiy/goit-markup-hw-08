@@ -41,6 +41,8 @@
   display: none;
   position: absolute;
   z-index: 1;
+  flex-direction: column;
+  justify-content: space-between;
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
@@ -53,7 +55,7 @@
     0px 1px 3px rgba(0, 0, 0, 0.16);
 
   &.is-open {
-    display: block;
+    display: flex;
   }
 }
 .menu-container__nav {
@@ -112,9 +114,11 @@
 }
 .menu-container__social {
   display: flex;
-  justify-content: space-around;
   margin-top: 64px;
   margin-bottom: 48px;
+}
+.menu-container__social-link:not(:last-child) {
+  margin-right: 20px;
 }
 .menu-container__social-link {
   font-weight: 500;
