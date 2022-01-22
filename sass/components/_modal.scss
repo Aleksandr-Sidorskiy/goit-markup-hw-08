@@ -8,12 +8,17 @@
   border-radius: 4px;
 
   color: #ffffff;
-  font-family: "roboto";
-  font-weight: 700;
   background-color: var(--fone-color);
+  font-family: "roboto";
+  font-family: Roboto;
   font-style: normal;
+  font-weight: bold;
   font-size: 16px;
-  line-height: 1.85;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 .backdrop {
   position: fixed;
@@ -88,10 +93,21 @@
   fill: var(--fone-color);
 }
 .modal__head {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 23px;
-  letter-spacing: 0.03em;
+  display: flex;
+  text-align: center;
+  @media screen and (max-width: 1199px) {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+  }
+  @media screen and (min-width: 1200px) {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+  }
 }
 .modal__form {
   margin-top: 12px;
@@ -147,7 +163,13 @@
   resize: none;
 }
 .modal__policy-box {
-  font-size: 14px;
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
+
   color: #757575;
   margin-bottom: 30px;
   display: flex;
