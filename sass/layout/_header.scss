@@ -1,6 +1,14 @@
 .header {
+  @media screen and (max-width: 767px) {
+    padding: 16px 0;
+  }
+
   border-bottom: 1px solid #ececec;
   position: relative;
+  display: flex;
+  align-items: center;
+}
+.header__box {
   display: flex;
   align-items: center;
 
@@ -40,6 +48,7 @@
 .menu-container {
   display: none;
   position: absolute;
+  position: fixed;
   z-index: 1;
   flex-direction: column;
   justify-content: space-between;
